@@ -6,6 +6,7 @@ xxxxxxx
 xxxxxxx
 */
 
+//------------------------------------------------------------------------
 /*
 Data types:
 undefined, null, boolean, string, symbol, number, and object
@@ -18,6 +19,7 @@ Variable = var //#endregion
 //let ourName = "vg.no"
 // const kan ikke endres
 
+//------------------------------------------------------------------------
 /*Storing Values with Assignment Operators
 assigning
 var a; //deklarer en variable til å bli kalt 'a'
@@ -31,10 +33,11 @@ b = a;
 //console.log = print
 console.log(a);
 
-
+//------------------------------------------------------------------------
 // Initializing Variables w/Assignment Operator
 //var a = 9; //a deklerer 9 initialzing import {  } from "module";
 
+//------------------------------------------------------------------------
 // Initializing these three variables
 var a = 1;
 var b = 2;
@@ -46,26 +49,31 @@ c = c + "string";
 
 console.log(c);
 
+//------------------------------------------------------------------------
 //Decklaration - camelCase
 var studyCapVar;
 var properCamelCase;
 var titleCaseOver;
 
+//------------------------------------------------------------------------
 //ASSIGNMENT
 studyCapVar = 10;
 properCamelCase = "a string";
 titleCaseOver = 9000;
 
+//------------------------------------------------------------------------
 //Adding numbers, diving etc
 var sum = 10 + 10;
 console.log(sum);
 
+//------------------------------------------------------------------------
 //INCREMENT NUMBERS
 var myNumber = 10;
 myNumber++
 console.log(myNumber);
 //slå sammen int og floats fungerer på samme måte
 
+//------------------------------------------------------------------------
 //REST
 var remainders;
 remainders = 11 % 3;
@@ -84,6 +92,7 @@ b += 10;
 c += 8;
 */
 
+//------------------------------------------------------------------------
 //ESCAPE CHARACTERS
 //"two "\string\" inside "\this\" string"
 
@@ -97,6 +106,7 @@ function doSomething(a, b) {
 }
 doSomething(210, 210);
 
+//------------------------------------------------------------------------
 // Passing VALUES ti funtions with arguments //#endregion
 //parametere er variabler som oppfører som placeholders
 
@@ -106,6 +116,7 @@ function functionWithArgs(a, b) {
 }
 functionWithArgs(400, 20); //funksjonskall/ functioncall
 
+//------------------------------------------------------------------------
 //GLOBAL SCOPE AND FUNCTIONS
 //scope, visability off variables
 //global = seen everywhere in the javascript code
@@ -130,6 +141,7 @@ function fun2() {
 fun1();
 fun2();
 
+//------------------------------------------------------------------------
 //LOCAL SCOPE AND FUNCTIONS
 function myLocalScope() {
   var myVar = 5 + " This is myVar";
@@ -148,6 +160,7 @@ function myOutfit() {
 }
 console.log(myOutfit());
 
+//------------------------------------------------------------------------
 //RETURN A VALUE FROM A FUNCTION WITH RETURN
 function minusSeven(num) {
   return num - 7;
@@ -159,6 +172,7 @@ function timesFive(num) {
 }
 console.log(timesFive(5));
 
+//------------------------------------------------------------------------
 //UNDERSTANDING UNDEFINED VALUE
 //RETURNED FROM A FUNCTION
 var sum = 0;
@@ -171,6 +185,7 @@ function addFive() {
   sum += 5; // undefined cause it doesnt log
 }
 
+//------------------------------------------------------------------------
 //ASSIGNMENT WITH A RETURNED VALUE
 function change(num) {
   return (num + 5) / 3;
@@ -185,6 +200,7 @@ function processArg(num) {
 }
 processed = processArg(7);
 
+//------------------------------------------------------------------------
 //STAND IN LINE
 function nextInLine(arr, item) {
   arr.push(item);
@@ -197,11 +213,13 @@ console.log("Before: " + JSON.stringify(testArray));
 console.log(nextInLine(testArray, 6));
 console.log("After: " + JSON.stringify(testArray));
 
+//------------------------------------------------------------------------
 //BOOLEAN VALUES //TRUE OR FALSE
 function welcomeToBooleans() {
   return true;
 }
 
+//------------------------------------------------------------------------
 // USE CONDITIONAL LOGIC WITH IF STATEMENTS
 function ourTrueOrFalse(isItTrue) {
   if (isItTrue) {
@@ -218,6 +236,7 @@ function trueOrFalse(wasThatTrue) {
 }
 console.log(trueOrFalse(true));
 
+//------------------------------------------------------------------------
 //Comparison with the Equality Operator
 //Setup
 function testEqual(val) {
@@ -229,6 +248,7 @@ function testEqual(val) {
 //change this value to test
 console.log(testEqual(10));
 
+//------------------------------------------------------------------------
 //COMPARISON WITH THE OPERATOR STRICT EQUALITY OPERATOR
 function testStrict(val) {
   if (val === 7) {
@@ -243,6 +263,7 @@ testStrict(10);
 3 === '3'
 */
 
+//------------------------------------------------------------------------
 //PRACTICE COMPARING DIFFERENT VALUES
 function compareEquality(a, b) {
   if (a === b) {
@@ -254,6 +275,7 @@ function compareEquality(a, b) {
 
 console.log(compareEquality(10, "10"));
 
+//------------------------------------------------------------------------
 //COMPARISON WITH THE INEQULITY OPERATOR
 function testNotEqual(val) {
   if (val != 99) {
@@ -263,6 +285,7 @@ function testNotEqual(val) {
 }
 console.log(testNotEqual(10));
 
+//------------------------------------------------------------------------
 //COMPARISON WITH THE OPERATOR !STRICT! INEQUALITY OPERATOR
 function testStrictNotEqual(val) {
   if (val !== 17) {
@@ -272,6 +295,7 @@ function testStrictNotEqual(val) {
 }
 console.log(testStrictNotEqual(10));
 
+//------------------------------------------------------------------------
 //COMPARISONS WITH THE LOGICAL And OPERATOR
 function testGreaterThan(val) {
   if (val > 100) {
@@ -285,6 +309,7 @@ function testGreaterThan(val) {
 console.log(testGreaterThan(9));
 console.log({});
 
+//------------------------------------------------------------------------
 //COMPARISON WITH THE GREATER THAN
 //OR EQUAL TO OPERATOR
 function testLessThan(val) {
@@ -297,6 +322,7 @@ function testLessThan(val) {
 }
 console.log(testLessThan(10));
 
+//------------------------------------------------------------------------
 //COMPARISON WITH THE LESS THAN OR EQUAL TO OPERATOR
 function testLessOrEqual(val) {
   if (val <= 12) {
@@ -309,6 +335,7 @@ function testLessOrEqual(val) {
 }
 console.log(testLessOrEqual(10));
 
+//------------------------------------------------------------------------
 //COMPARISONS WITH THE LOGICAL And OPERATOR
 function testLogicalAnd(val) {
   if (val <= 50 && val >= 25) {
@@ -320,6 +347,7 @@ function testLogicalAnd(val) {
 }
 testLogicalAnd(10);
 
+//------------------------------------------------------------------------
 //COMPARISON WITH THE LOGICAL 'OR' OPERATOR
 function testLogicalOr(val) {
   if (val < 10 || val > 20) {
@@ -330,6 +358,7 @@ function testLogicalOr(val) {
 }
 testLogicalOr(15);
 
+//------------------------------------------------------------------------
 //ELSE STATEMENTS
 function testElse(val) {
   var result = "";
@@ -341,6 +370,8 @@ function testElse(val) {
   }
   return result;
 }
+
+//------------------------------------------------------------------------
 //ELSE IF STATEMENTS
 //mulitple additions that needs to be adressed
 function testElseIf(val) {
@@ -354,6 +385,7 @@ function testElseIf(val) {
 }
 testElseIf(7);
 
+//------------------------------------------------------------------------
 //LOGICAL ORDER IN If Else statements
 function orderMyLogic(val) {
   if (val < 5) {
@@ -366,6 +398,7 @@ function orderMyLogic(val) {
 }
 console.log(orderMyLogic(7));
 
+//------------------------------------------------------------------------
 //CHAINING If Else Statements
 function testSize(num) {
   if (num < 5) {
@@ -382,6 +415,7 @@ function testSize(num) {
 }
 console.log(testSize(10));
 
+//------------------------------------------------------------------------
 //GOLF CODE
 var names = [
   "hole-in-one",
@@ -392,6 +426,7 @@ var names = [
   "double-bogey",
   "go home"
 ];
+
 function golfScore(par, strokes) {
   if (strokes == 1) {
     return names[0];
@@ -411,6 +446,7 @@ function golfScore(par, strokes) {
 }
 console.log(golfScore(5, 4));
 
+//------------------------------------------------------------------------
 //SWITCH STATEMENTS isf chained statements
 function caseInSwitch(val) {
   var answer = "";
@@ -432,6 +468,7 @@ function caseInSwitch(val) {
 }
 console.log(caseInSwitch(4));
 
+//------------------------------------------------------------------------
 //DEFAULT OPTION IN SWITCH STATEMENTS
 function switchOfStuff(val) {
   var answer = "";
@@ -453,6 +490,7 @@ function switchOfStuff(val) {
 }
 console.log(switchOfStuff("a"));
 
+//------------------------------------------------------------------------
 //MULITPLE IDENTICAL OPTIONS IN SWITCH STATEMENTS
 // NO BREAKES
 function sequentalSizes(val) {
@@ -478,6 +516,7 @@ function sequentalSizes(val) {
 }
 console.log(sequentalSizes(5));
 
+//------------------------------------------------------------------------
 // REPLACING IF ELSE CHAINS WITH SWITCH
 function chainToSwitch(val) {
   var answer = "";
@@ -503,6 +542,7 @@ function chainToSwitch(val) {
 }
 console.log(chainToSwitch(42));
 
+//------------------------------------------------------------------------
 /*RETURNING BOOLEAN VALUES FROM FUNCTIONS
 
 function isLess(a, b) {
@@ -521,6 +561,7 @@ function isLess(a, b) {
 
 console.log(isLess(50, 40));
 
+//------------------------------------------------------------------------
 //RETURNING EARLY PATTERN FROM FUNCTIONS
 function abTest(a, b) {
   if (a < 0 || b < 0) {
@@ -532,6 +573,7 @@ function abTest(a, b) {
 
 console.log(abTest(-2, 2));
 
+//------------------------------------------------------------------------
 //COUNTING CARDS
 var count = 0;
 
@@ -567,6 +609,7 @@ cc("Spa");
 
 console.log(cc(10));
 
+//------------------------------------------------------------------------
 //-----------------------------------------------------
 //BUILD JAVASCRIPTS OBJECTS
 
@@ -584,6 +627,7 @@ var myDog = {
   friends: []
 };
 
+//------------------------------------------------------------------------
 //ACCESSING OBJECTS PROPERTIES WITH DOT NOTATION
 //find values of objects
 var testObj = {
@@ -595,6 +639,7 @@ var testObj = {
 var hatValue = testObj.hat;
 var shirtValue = testObj.shirt;
 
+//------------------------------------------------------------------------
 //ACCESSING OBJECT PROPERTIES WITH BRACKET NOTATION
 var testObj = {
   "an entree": "hamburger",
@@ -606,6 +651,7 @@ var testObj = {
 var entreeValue = testObj["an entree"]; //change this line
 var drinkValue = testObj["the drink"]; //change this line
 
+//------------------------------------------------------------------------
 //ACCESSING OBJECT PROPERTIES WITH VARIABLES
 var testObj = {
   12: "namath",
@@ -616,6 +662,7 @@ var testObj = {
 var playerNumber = 16;
 var player = testObj[playerNumber]; //using variable to lookup the property
 
+//------------------------------------------------------------------------
 // UPDATING OBEJCT PROPERTIES //#endregion
 var ourCat = {
   name: "camper",
@@ -635,6 +682,7 @@ var myCat = {
 //update here
 myCat.name = "happy catter";
 
+//------------------------------------------------------------------------
 // ADD NEW PROPERTIES TO AN OBJECT
 var ourDog = {
   name: "ole",
@@ -654,6 +702,7 @@ var myDog = {
 //add properties to objects[]
 myDog["bark"] = "woof!";
 
+//------------------------------------------------------------------------
 //DELETE PROPERTIES FROM AN OBJECTS
 var ourDog = {
   name: "ole",
@@ -665,6 +714,7 @@ var ourDog = {
 //delete property
 delete ourDog.bark;
 
+//------------------------------------------------------------------------
 //USING OBJECTS FOR LOOKUPS
 function phoneticLookup(val) {
   var result = "";
@@ -703,6 +753,7 @@ function phoneticLookup(val) {
 }
 console.log(phoneticLookup("c"));
 
+//------------------------------------------------------------------------
 //TESTING OBEJCTS FOR PROPERTIES
 var myObj = {
   gift: "pony",
@@ -720,10 +771,10 @@ function checkObj(checkProp) {
 
 console.log(checkObj("hello"));
 
+//------------------------------------------------------------------------
 //MANIPULATING COMPLEX OBJECTS
 //inside array, objects. inside obekcts, er keyvaluepairs
-var myMusic = [
-  {
+var myMusic = [{
     artist: "Billy Idol",
     title: "piano man",
     release_year: 1973,
@@ -738,6 +789,7 @@ var myMusic = [
   }
 ];
 
+//------------------------------------------------------------------------
 //ACCESSING NESTED OBJECTS
 var myStorage = {
   car: {
@@ -755,9 +807,9 @@ var gloveBoxContents = myStorage.car.inside["glove box"];
 
 console.log(gloveBoxContents);
 
+//------------------------------------------------------------------------
 //ACCESSING NESTED ARRAYS
-var myPlants = [
-  {
+var myPlants = [{
     type: "flowers",
     list: ["rose", "tulip", "dandelion"]
   },
@@ -770,6 +822,7 @@ var myPlants = [
 var secondTree = myPlants[1].list[1];
 console.log(secondTree);
 
+//------------------------------------------------------------------------
 //RECORD COLLECTION
 var collection = {
   "2548": {
@@ -804,6 +857,7 @@ function updateRecords(id, prop, value) {
 updateRecords(2548, "tracks", "test");
 console.log(updateRecords(2548, "artist", "bon jovi"));
 
+//------------------------------------------------------------------------
 //ITERATE WITH WHILE LOOPS
 var myArray = [];
 
@@ -815,6 +869,7 @@ while (i < 5) {
 
 console.log(myArray);
 
+//------------------------------------------------------------------------
 //ITERATE WITH FOR LOOPS
 var ourArray = [];
 //initial, next thing condition, the final thing(iteration)
@@ -830,6 +885,7 @@ for (var i = 1; i < 6; i++) {
 
 console.log(myArray);
 
+//------------------------------------------------------------------------
 //ITERATE ODD NUMBERS WITH A FOR LOOP
 var ourArray = [];
 for (var i = 0; i < 10; i += 2) {
@@ -845,6 +901,7 @@ for (var i = 1; i < 10; i += 2) {
 }
 console.log(myArray);
 
+//------------------------------------------------------------------------
 //COUNT BACKWARDS WITH A FOR LOOP
 var ourArray = [];
 
@@ -861,6 +918,7 @@ for (var i = 9; i > 0; i -= 2) {
 }
 console.log(myArray);
 
+//------------------------------------------------------------------------
 //ITERATE THROUGH AN ARRAY WITH A FOR LOOP
 //ITERATE THOUTHPUT THE CONTENT OF AN ARRAY
 var ourArr = [9, 10, 11, 12];
@@ -880,6 +938,7 @@ for (var i = 0; i < myArr.length; i++) {
 }
 console.log(total);
 
+//------------------------------------------------------------------------
 //NESTING FOR LOOPS
 function multiplyAll(arr) {
   var product = 1;
@@ -893,10 +952,15 @@ function multiplyAll(arr) {
   return product;
 }
 
-var product = multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+var product = multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7]
+]);
 
 console.log(product);
 
+//------------------------------------------------------------------------
 // ITERATE WITH DO..WHILE LOOPS //#endregion
 var myArray = [];
 var i = 10;
@@ -909,10 +973,10 @@ do {
 
 console.log(i, myArray);
 
+//------------------------------------------------------------------------
 //PROFILE LOOKUP //#endregion
 //key value pairs
-var contacts = [
-  {
+var contacts = [{
     firstName: "Are",
     lastName: "Nyhammer",
     numbers: "123",
@@ -926,6 +990,7 @@ var contacts = [
   }
 ];
 
+//------------------------------------------------------------------------
 //lookup function
 function lookUpProfile(name, prop) {
   //iterate through contacts
@@ -940,12 +1005,14 @@ function lookUpProfile(name, prop) {
 var data = lookUpProfile("Are", "lastName");
 console.log(data);
 
+//------------------------------------------------------------------------
 //Generate Random Fractions
 function randomFractions() {
   return Math.random();
 }
 console.log(randomFractions());
 
+//------------------------------------------------------------------------
 //Generate random whole numbers
 //Math.Floor
 var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
@@ -955,6 +1022,7 @@ function randomWholeNum() {
 }
 console.log(randomWholeNum());
 
+//------------------------------------------------------------------------
 //Generate Random Whole NUmbers within a Range
 function ourRandomRange(ourMin, ourMax) {
   //calculation to get a random number between min-max
@@ -970,6 +1038,7 @@ var myRandom = randomRange(5, 15);
 
 console.log(myRandom);
 
+//------------------------------------------------------------------------
 //Use the parseInt function
 function convertToInteger(str) {
   return parseInt(str);
@@ -977,9 +1046,503 @@ function convertToInteger(str) {
 
 convertToInteger("56");
 
+//------------------------------------------------------------------------
 //Use the parseInt Function with a Radix
 function convertToInteger(str) {
   //pass 2 so the computer knows it is a binary number
   return parseInt(str, 2);
 }
 convertToInteger("10011");
+
+//------------------------------------------------------------------------
+//Use the Condtitional (Ternery) Operator
+//condition ? statementif-true : statement-if-false;
+function checkEqual(a, b) {
+  /*if(a == b) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}*/
+  return a === b ? true : false;
+}
+checkEqual(1, 2);
+
+//------------------------------------------------------------------------
+//Use Multiple Conditional (Ternery) Operators //#endregion
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+
+console.log(checkSign(10));
+
+//------------------------------------------------------------------------
+//Difference Between the var and let keywords
+/* let kan ikke deklarer duplikater
+var catName = 'Quincy';
+var quote;
+
+var catName = 'Beau';
+
+function catTalk() {
+  'use strict'; //enable strict-mode, strengere på riktig kode
+
+  catName = 'Oliver';
+  quote = catName + ' says Meow';
+}
+catTalk();
+*/
+let catName = "Quincy"; //kan bruke let eller const istedenfor var
+let quote;
+
+catName = "Beau";
+
+function catTalk() {
+  "use strict"; //enable strict-mode, strengere på riktig kode
+
+  catName = "Oliver";
+  quote = catName + " says Meow";
+}
+catTalk();
+
+//------------------------------------------------------------------------
+//Compare scopes of the var and let keywords
+function checkScope() {
+  "use strict";
+  let i = "function scope";
+  if (true) {
+    let i = "block scope";
+    console.log("block scope i is: ", i);
+  }
+  console.log("function scope i is: ", i);
+  return i;
+}
+checkScope();
+
+//Declare a Read-Only Variable with the const Keyword //#endregion
+function printManyTimes(str) {
+  "use strict";
+  //endre til var til const
+  //når du er sikker på at du ikke vil reassgine en variable
+  //CAPS for å huske
+  const SENTENCE = str + " is cool";
+
+  //change to LET fordi:
+  for (let i = 0; i < str.length; i += 2) {
+    console.log(SENTENCE);
+  }
+}
+printManyTimes("freCodeCamp");
+
+//------------------------------------------------------------------------
+//MUTATE AN ARRAY DECLARED WITH CONST
+const s = [5, 7, 2];
+
+function editInPlace() {
+  "use strict";
+  //update array bracket notation
+  //s = [2, 5, 7];
+  s[0] = 2;
+  s[1] = 5;
+  s[2] = 7;
+}
+editInPlace();
+
+console.log(s);
+
+//------------------------------------------------------------------------
+//PREVENT OBJECT MUTATION
+//om du har et object men ikke vil at det skal endres use freeze
+function freezeObj() {
+  "use strict";
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+
+  Object.freeze(MATH_CONSTANTS);
+
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch (ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+
+console.log(PI);
+
+//------------------------------------------------------------------------
+//USE ARROW FUNCTION TP WRITE CONCISE ANONYMOUS FUNCTIONS
+/*var magic = function() {
+  return new date();
+};
+*/
+//Kan kortes ned til dette:
+const magic = () => new Date();
+
+//------------------------------------------------------------------------
+//WRITE ARROW FUNCTIONS WITH PARAMETERS //#endregion
+/*var myConcat = function(arr1, arr2) {
+  return arr1.concat(arr2);
+};*/
+const myConcat = (arr1, arr2) => arr1.concat(arr2); //returnert etter arrow
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//------------------------------------------------------------------------
+//WRITE HIGHER ORDER ARROW FUNCTIONS
+//update this function:
+// const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+// const squareList = (arr) => {
+//   const squaredIntegers = arr;
+//   return squaredIntegers;
+// };
+//filter out whats NOT integers
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = arr => {
+  const squaredIntegers = arr
+    .filter(num => Number.isInteger(num) && num > 0)
+    .map(x => x * x);
+  return squaredIntegers;
+};
+
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+//------------------------------------------------------------------------
+//MORE FLEXABLE FUNCTIONS //#endregion
+//default parmeter kick in when the argument is not sepciefied or defined
+const increment = (function () {
+  return function increment(number, value = 1) {
+    return number + value;
+  };
+})();
+console.log(increment(5, 2));
+console.log(increment(5));
+
+//------------------------------------------------------------------------
+//USE THE REST OPERATOR WITH FUNCTION PARAMETERS
+//THE REST OPERATOR ALLOWS YOU TO CREATE A FUNCTION THAT TAKES A VARIABLE NUMBERS OF ARGUMENTS
+// THE REST OPERATOR IS 3 DOTS: ...
+// const sum = (function() {
+//   return function sum(x, y, z) {
+//     const args = [x, y, z];
+//     return args.reduce((a, b) => a + b, 0);
+//   };
+// })();
+const sum2 = (function () {
+  return function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  };
+})();
+
+console.log(sum2(1, 2, 3, 4));
+
+//------------------------------------------------------------------------
+//USE THE SPREAD OPERATOR TO EVALUATE ARRAYS IN-PLACE
+//the spread
+const arr1 = ["jan", "feb", "mar", "apr", "may"];
+let arr2;
+(function () {
+  arr2 = [...arr1]; // are equal to content
+  arr1[0] = "potato";
+})();
+console.log(arr2);
+
+//------------------------------------------------------------------------
+//USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM OBJECTS //#endregion
+var voxel = {
+  x: 3.6,
+  y: 7.4,
+  z: 6.54
+};
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+const {
+  x: a,
+  y: b,
+  z: c
+} = voxel;
+
+const AVG_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+  "use strict";
+
+  const {
+    tomorrow: tempOfTomorrow
+  } = avgTemperatures;
+
+  return tempOfTomorrow;
+}
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+//------------------------------------------------------------------------
+//DESTRUCTURING ASSIGNMENT WITH NESTED OBJECTS
+//NESTED
+const LOCAL_FORECAST = {
+  today: {
+    min: 72,
+    max: 83
+  },
+  tomorrow: {
+    min: 73.3,
+    max: 84.6
+  }
+};
+
+function getMaxOfTmrw(forecast) {
+  "use strict";
+
+  // nested, nedd to go inside the  2morrow object
+  //destructed
+  const {
+    tomorrow: {
+      max: maxOfTomorrow
+    }
+  } = forecast; //this is nested object
+
+  return maxOfTomorrow;
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+//------------------------------------------------------------------------
+//USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM ARRAYS
+const [zz, xx, , yy] = [1, 2, 3, 4, 5, 6];
+console.log(zz, xx, yy);
+
+let aa = 8,
+  bb = 6;
+(() => {
+  "use strict";
+  [aa, bb] = [bb, aa];
+})();
+console.log(aa);
+console.log(bb);
+
+//------------------------------------------------------------------------
+//USE DESTRUCTERING ASSIGNMENT WITH THE REST OPERATOR
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function removeFirstTwo(list) {
+  const [, , ...arr] = list;
+
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+
+//------------------------------------------------------------------------
+//USE DESTRUCTERING ASSIGMENT TO PASS AN OBJECT AS A FUNCTION´S PARAMETERS
+//commonly used with API calls
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+const half = (function () {
+  return function half({
+    max,
+    min
+  }) {
+    return (max + min) / 2.0;
+  };
+})();
+console.log(stats);
+console.log(half(stats));
+
+//------------------------------------------------------------------------
+//CREATE STRINGS USING TEMPLATE LITERALS
+//ONE WAY TO MAKE COMPLEX STRINGS EASIER //#endregion
+const person = {
+  name: "ola nordmann",
+  age: 23
+};
+
+const greeting = `halloen, mitt navn er ${person.name} Jeg er ${
+  person.age
+} years old`;
+console.log(greeting);
+
+const result = {
+  sucess: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["id-blacklist", "no-dup-keys"]
+};
+
+function makeList(arr) {
+  const resultDisplayArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    resultDisplayArray.push(`<li class='text-warning'> ${arr[i]} </li>`);
+  }
+  return resultDisplayArray;
+}
+/**
+ * makeList(result.failure) should return:
+ * [ '<li class='text-warning'>no-var</li>',
+ *   '<li class='text-warning'>var-on-top</li>',
+ *   '<li class='text-warning'>linebreak</li>',]
+
+*/
+const resultDisplayArray = makeList(result.failure);
+
+console.log(resultDisplayArray);
+
+//------------------------------------------------------------------------
+//WRITE CONCISE OBJECT LITERAL DECLARATIONS USING SIMPLE FIELDS
+//arrow functions, tar inn 3, returnerer name,age, gender
+//name key, value name
+/* const createPerson = (name, age, gender) => {
+  return {
+    name: name,
+    age: age,
+    gender: gender
+  }; */
+const createPerson = (name, age, gender) => ({
+  name,
+  age,
+  gender
+});
+console.log(createPerson("zodiac hasbro", 56, "male"));
+
+//------------------------------------------------------------------------
+//WRITE CONCISE DECLARATIVE FUNCTIONS
+//object can contain functions, but it is a simplier way
+const bicycle = {
+  gear: 2,
+  /* setGear: function(newGear) {
+    'use strict';
+    this.gear = newGear;
+  } */
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+//------------------------------------------------------------------------
+//USE CLASS SYNTAX TO DEFINE A CONSTRUCTOR
+//THE OLD WAY TO CREATE AN OBJECT:
+//constructor function this.targetPLanet
+/* var SpaceShuttle = function(targetPLanet) {
+  this.targetPLanet = targetPLanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPLanet) */
+//NEW WAY:
+class SpaceShuttle {
+  constructor(targetPLanet) {
+    this.targetPLanet = targetPLanet;
+  }
+}
+var zeus = new SpaceShuttle("Jupiter");
+
+console.log(zeus.targetPLanet);
+
+//do the same thing for vegatable class:
+function makeClass() {
+  class Vegetable {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+  return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable("carrot");
+console.log(carrot.name);
+
+//------------------------------------------------------------------------
+//USE GETTERS AND SETTERS TO CONTROL ACCESS TO AN OBJECT
+class Book {
+  //constructor
+  constructor(author) {
+    this._author = author;
+  }
+
+  //getter are meant to set to return a provate variable
+  get writer() {
+    return this._author;
+  }
+  //setter
+  set writer(updateAuthor) {
+    this._author = updateAuthor;
+  }
+}
+
+function makeClass() {
+  class Thermostat {
+    constructor(temp) {
+      this._temp = (5 / 9) * (temp - 32);
+    }
+    get temperature() {
+      return this._temp;
+    }
+    set temperature(updatetTemp) {
+      this._temp = updatetTemp;
+    }
+  }
+  return Thermostat;
+}
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(78);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
+console.log(temp);
+
+//------------------------------------------------------------------------
+//UNDERSTAND THE DIFFERENCE BETWEEN IMPORT AND REQUIRE//#endregion
+import {
+  captalizeString
+} from './string_function'
+const cap = captalizeString('hello');
+console.log(cap);
+
+//------------------------------------------------------------------------
+//USE EXPORT TO REuse A CODE BLOCK
+const captalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+export {
+  captalizeString
+};
+
+export const foo = 'bar';
+export const bar = 'foo';
+
+//------------------------------------------------------------------------
+//USE * TO IMPORT EVERYTHING FROM A FILE
+//import * as //object from 'nameOfFile
+
+//------------------------------------------------------------------------
+//CREATE AN EXPORT 'FALLBACK' WITH EXPORT DEFAULT
+//fallback often used if you want to export one thing from a file
+//function substract(x,y) { return x- y;}
+
+//------------------------------------------------------------------------
+//ImPORT A DEFAULT EXPORT
+//import substract from 'math_functions';
+//substract(7,4);
+
+//------------------------------------------------------------------------
